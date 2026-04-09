@@ -23,15 +23,26 @@ def cost_calculation(feet, cost_per_foot):
 
 
 def main():
+    print('Hello user! The following is more information for Fiber Optics.')
     """
     Main function that runs the calculation.
     Collects the user inputs for feet and company.
     Once there is something for user input, pricing is determined, total cost is calculated, and makes a receipt.
     """
-    print('Hello user! The following is more information for Fiber Optics.')
+    # Following is error handling
+    # continue used for loop if there is still an invalid output
+    #break once valid it continues on
+    while True:
+        try:
+            feet = float(input("Enter number of feet:"))
+            if feet < 0:
+                print ("Please Enter a positive number")
+                continue
+            break
+        except ValueError:
+            print("Invalid input")
 
     # Following is user inputs
-    feet = float(input("Enter the number of feet:"))
     company = input("Enter Company Name:")
 
     # Cost per foot for varying number of feet
