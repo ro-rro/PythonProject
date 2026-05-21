@@ -80,11 +80,6 @@ def main():
     cart = []
 
     while True:
-        """
-        Entry to the cash register program.
-        Displays the welcome message and tells to user to input values
-        Prints the total item count and total price at checkout
-        """
 
         user_choice = input("Entre an item or 'e' to finish shopping:").lower()
 
