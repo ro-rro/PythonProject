@@ -5,7 +5,6 @@
 
 import requests
 
-api_key = "62884bbc1da29106956a7554d891626a"
 
 
 def welcome_message():
